@@ -23,8 +23,8 @@ class CreateTempordersTable extends Migration
             $table->timestamps();
 
             $table->foreign('product_id')
-            ->refernces('id')
-            ->on('product')
+            ->references('id')
+            ->on('products')
             ->onDelete('cascade');
         });
     }

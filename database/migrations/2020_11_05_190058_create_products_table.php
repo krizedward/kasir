@@ -21,10 +21,15 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->timestamps();
 
-            $table->foreign('category_id')
-            ->refrences('id')
-            ->on('categories')
-            ->onDelete('cascade');
+            // $table->foreign('category_id')
+            // ->references('id')
+            // ->on('categories')
+            // ->onDelete('cascade');
+
+            // $table->foreign('category_id')
+            //     ->references('id')->on('categories')
+            //     ->onUpdate('cascade')
+            //     ->onDelete('cascade');
         });
     }
 
